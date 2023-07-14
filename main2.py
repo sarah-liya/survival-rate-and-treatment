@@ -27,6 +27,12 @@ def user_input_features():
         "Liver",
         "Oesophagus"
     ]
+    stages = [
+        "1",
+        "2",
+        "3",
+        "4"
+    ]
     genders = [
         "Female",
         "Male"
@@ -39,12 +45,7 @@ def user_input_features():
         "75-99",
         "All ages"
     ]
-    stages = [
-        "1",
-        "2",
-        "3",
-        "4"
-    ]
+
     years_options = [
         "1",
         "2",
