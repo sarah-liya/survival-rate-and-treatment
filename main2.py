@@ -55,9 +55,9 @@ def user_input_features():
     ]
 
     cancer_type = st.selectbox('**Cancer Type**', cancer_types)
+    stage = st.selectbox('**Cancer Stage**', stages)
     gender = st.selectbox('**Gender**', genders)
     age = st.selectbox('**Patient Age**', ages)
-    stage = st.selectbox('**Cancer Stage**', stages)
     selected_years = st.selectbox('**Years Since Diagnosis**', years_options)
 
     data = {'Cancer type': cancer_type, 'Gender': gender, 'Stage': stage, 'Age At Diagnosis': age,
