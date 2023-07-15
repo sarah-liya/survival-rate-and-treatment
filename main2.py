@@ -6,10 +6,17 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
+hide_streamlit_style = """
+            <style>
+            header {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.header('CANCERVIVE: Cancer Survival Rate Prediction System')
 
-st.write('Disclaimer: The Cancer Survival Rate prediction and Treatment Recommendation results is based on Machine Learning Data')
+st.subheader('Disclaimer: The Cancer Survival Rate prediction and Treatment Recommendation results is based on Machine Learning Data')
 
 def user_input_features():
     cancer_types = [
