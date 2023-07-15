@@ -7,12 +7,6 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-hide_streamlit_style = """
-            <style>
-            header {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 st.header('CANCERVIVE: Cancer Survival Rate Prediction System')
