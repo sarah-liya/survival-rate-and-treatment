@@ -7,24 +7,15 @@ from sklearn.preprocessing import LabelEncoder
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-# Hide the Streamlit menu and footer
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 hide_streamlit_style = """
             <style>
             header {visibility: hidden;}
-            #MainMenu, footer {visibility: hidden;}
+            footer {visibility: hidden;}
             </style>
             """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
-# Add custom CSS to remove the header space
-custom_css = """
-            <style>
-            body {
-                margin-top: 0;
-            }
-            </style>
-            """
-st.markdown(custom_css, unsafe_allow_html=True)
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 st.header('CANCERVIVE: Cancer Survival Rate Prediction System')
 
