@@ -5,9 +5,12 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 # Hide the Streamlit menu and footer
 hide_streamlit_style = """
             <style>
+            header {visibility: hidden;}
             #MainMenu, footer {visibility: hidden;}
             </style>
             """
