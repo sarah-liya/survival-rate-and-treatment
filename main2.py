@@ -5,14 +5,23 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# Hide the Streamlit menu and footer
 hide_streamlit_style = """
             <style>
-            header {visibility: hidden;}
-            footer {visibility: hidden;}
+            #MainMenu, footer {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+# Add custom CSS to remove the header space
+custom_css = """
+            <style>
+            body {
+                margin-top: 0;
+            }
+            </style>
+            """
+st.markdown(custom_css, unsafe_allow_html=True)
 
 st.header('CANCERVIVE: Cancer Survival Rate Prediction System')
 
