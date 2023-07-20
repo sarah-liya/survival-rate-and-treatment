@@ -73,7 +73,7 @@ def user_input_features():
 input_features = user_input_features()
 
 # Load the Cancer survival dataset from CSV
-url = 'https://raw.githubusercontent.com/sarah-liya/survival-rate-and-treatment/main/FYP%20Cancer%20Survival%20data.csv'
+url = 'https://raw.githubusercontent.com/sarah-liya/survival-web/main/FYP%20Cancer%20Survival%20new.csv'
 
 
 cancerS_df = pd.read_csv(url, low_memory=False)
