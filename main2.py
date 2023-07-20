@@ -73,7 +73,8 @@ def user_input_features():
 input_features = user_input_features()
 
 # Load the Cancer survival dataset from CSV
-url = 'https://raw.githubusercontent.com/sarah-liya/survival-web/main/FYP%20Cancer%20Survival%20new.csv'
+url = 'https://github.com/sarah-liya/survival-rate-and-treatment/blob/main/FYP%20Cancer%20Survival%20data.csv'
+
 cancerS_df = pd.read_csv(url, low_memory=False)
 
 # Encode the categorical features in the original dataset
