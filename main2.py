@@ -217,47 +217,25 @@ if input_features is not None:
                 if input_features['Cancer type'].iloc[0] == 0:  #Bladder
                     st.write('### Cancer Treatment Recommendation for Bladder Cancer')
                     if input_features['Stage'].iloc[0] == 0:                        
-                        st.write('- Tumour Resection')
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy') 
+                        st.write('- Chemotherapy')
                     elif input_features['Stage'].iloc[0] == 1:
                         st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 2:
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 3:
-                        st.write('- Tumour Resection')
-                        st.write('- Chemotherapy')
 
                         
                 elif input_features['Cancer type'].iloc[0] == 1:  #Breast
                     st.write('### Cancer Treatment Recommendation for Breast Cancer')
                     if input_features['Stage'].iloc[0] == 0:
-                        st.write('- Tumour Resection')
                         st.write('- Chemotherapy') 
                     elif input_features['Stage'].iloc[0] == 1:
                         st.write('- Tumour Resection')
-                        st.write('- Radiotherapy') 
                         st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 2:
-                        st.write('- Tumour Resection')
-                        st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 3:
-                        st.write('- No Treatment Recommend')
 
                 elif input_features['Cancer type'].iloc[0] == 4:  #Oesophagus
                     st.write('### Cancer Treatment Recommendation for Oesophagus Cancer')                    
                     if input_features['Stage'].iloc[0] == 0:
                         st.write('- Tumour Resection')
-                        st.write('- Chemotherapy') 
+                        st.write('- Radiotherapy') 
                     elif input_features['Stage'].iloc[0] == 1:
-                        st.write('- Tumour Resection')
-                        st.write('- Radiotherapy')
-                    elif input_features['Stage'].iloc[0] == 2:
-                        st.write('- Tumour Resection')
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 3:
                         st.write('- Tumour Resection')
                         st.write('- Radiotherapy')
 
@@ -266,27 +244,15 @@ if input_features is not None:
                     if input_features['Stage'].iloc[0] == 0:
                         st.write('- Tumour Resection')
                     elif input_features['Stage'].iloc[0] == 1:
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 2:
                         st.write('- Tumour Resection')
-                        st.write('- Chemotherapy') 
-                    elif input_features['Stage'].iloc[0] == 3:
-                        st.write('- Chemotherapy')
 
                 elif input_features['Cancer type'].iloc[0] == 3:  #Lung
                     st.write('### Cancer Treatment Recommendation for Lung Cancer')
                     if input_features['Stage'].iloc[0] == 0:             
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy') 
+                        st.write('- Chemotherapy')
                     elif input_features['Stage'].iloc[0] == 1:
-                        st.write('- Radiotherapy')
                         st.write('- Chemotherapy')
-                    elif input_features['Stage'].iloc[0] == 2:
-                        st.write('- Radiotherapy')
-                        st.write('- Chemotherapy')
-                    elif input_features['Stage'].iloc[0] == 3:
-                        st.write('- Chemotherapy')
+                                
             elif highest_weight_attribute == 'Age At Diagnosis':
                 if input_features['Cancer type'].iloc[0] == 0:  #Bladder
                     st.write('### Cancer Treatment Recommendation for Bladder Cancer')
